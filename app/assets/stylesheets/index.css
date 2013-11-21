@@ -25,8 +25,8 @@ h1.header {
 }
 
 div.memes{
-  margin: 40px 40px;
-
+  margin: 20px;
+  text-align: center;
 }
 
 img.meme {
