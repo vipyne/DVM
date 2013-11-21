@@ -1,4 +1,4 @@
-class CaptionsController < ActionController
+class CaptionsController <ApplicationController
   def show
   end
 
