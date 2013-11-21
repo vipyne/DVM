@@ -1,8 +1,8 @@
-yooo
 
 <%= form_for @meme, method: "post" do |f| %>
 title: <%= f.text_field :title %><br>
-image url: <%= f.text_field :image_url %> 
+image url: <%= f.text_field :image_url %> or<br>
+file from desktop: <%= f.file_field :image_url %><br>
 <%= f.submit "submit" %>
 <% end %>
 
