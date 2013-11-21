@@ -1,3 +1,3 @@
 PimpMyMeme::Application.routes.draw do
-  resources :memes
+  resources :memes, :captions
 end
