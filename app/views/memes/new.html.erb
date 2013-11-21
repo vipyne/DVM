@@ -1,0 +1,10 @@
+yooo
+
+<%= form_for @meme, method: "post" do |f| %>
+title: <%= f.text_field :title %><br>
+image url: <%= f.text_field :image_url %> 
+<%= f.submit "submit" %>
+<% end %>
+
+<hr>
+
