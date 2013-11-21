@@ -1,17 +1,23 @@
+<div class="pimp_meme">
+<h1 class="meme"><a href='/' id="index">PIMP MY MEME</a></h1>
+</div>
 <div class="meme">
+
+
+<h1 class="meme_show"> Lay it on Me[me] </h1>
   <%=image_tag(@meme.image_url, size: "400x400", class:"meme_show", alt:@meme.title)%>
 
 
-<h1 class="meme_show"> <%=@meme.title%> </h1>
+
 </div>
-<hr>
+
 <%= render "captions/captions" %>
 <br>
 
 <div class="captions">
 <%= form_for :caption, :html => {:class => "caption_form"} do |f|  %>
-Caption: <%= f.text_area :title %><br>
-Signature: <%= f.text_field :signature %><br>
+<%= f.text_area :title, :placeholder => "Show me your Meme"%><br>
+<%= f.text_field :signature, :placeholder => "Your Name" %><br>
 <%= f.submit "submit" %>
 <% end %>
 </div>
