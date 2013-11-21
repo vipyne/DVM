@@ -1,2 +1,19 @@
+<div class="meme">
+  <%=image_tag(@meme.image_url, size: "400x400", class:"meme_show", alt:@meme.title)%>
+
+
+<h1 class="meme_show"> <%=@meme.title%> </h1>
+</div>
+<hr>
 <%= render "captions/captions" %>
+<br>
+
+<div class="captions">
+<%= form_for :caption, :html => {:class => "caption_form"} do |f|  %>
+Caption: <%= f.text_area :title %><br>
+Signature: <%= f.text_field :signature %><br>
+<%= f.submit "submit" %>
+<% end %>
+</div>
+
 
