@@ -4,7 +4,7 @@
 
 <div class = "memes">
 
-<% @memes.each do |meme|%>
+<% @memes.shuffle.each do |meme|%>
   <%= image_tag(meme.image_url, size: "200x200", class:"meme", alt:meme.title) %>
 <%end %>
 
