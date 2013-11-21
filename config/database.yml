@@ -43,9 +43,3 @@ test:
   database: pimp_my_meme_test
   pool: 5
 
-
-production:
-  adapter: postgresql
-  encoding: unicode
-  database: pimp_my_meme_production
-  pool: 5
