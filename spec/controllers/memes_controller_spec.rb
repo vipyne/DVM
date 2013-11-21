@@ -5,4 +5,9 @@ describe MemesController do
     get :index
     response.status.should eq 200
   end
+
+  it "#show" do
+    get
 end
+
+
