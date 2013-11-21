@@ -34,11 +34,16 @@ img.meme {
   border: solid 10px rgba(138,150,150,0.7);
 }
 
-@media (max-width: 400px){
+@media screen and (max-width: 400px){
   h1.header{
     font-size: 25px;
+    top: 10%;
   }
   div.memes{
     margin: 30px auto;
+  }
+
+  header{
+    height: 100px;
   }
 }
