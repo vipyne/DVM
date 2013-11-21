@@ -2,6 +2,7 @@ PimpMyMeme::Application.routes.draw do
 
   root :to => "memes#index"
 
-  resources :memes
+  resources :memes, :captions
+
 
 end
