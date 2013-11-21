@@ -2,6 +2,14 @@
   <h1 class="header">PIMP MY MEME</h1>
 </header>
 
+<%= link_to "add a meme", new_meme_path %>
+
+<% form_for :meme, url: memes_path(:meme) do |f| %>
+<%= f.text_field :title %>
+
+<%= f.submit "submit" %>
+<% end %>
+
 <div class = "memes">
 
 <% @memes.shuffle.each do |meme|%>
