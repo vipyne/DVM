@@ -1,0 +1,19 @@
+<header>
+  <h1 class="header">PIMP MY MEME</h1>
+</header>
+
+<% @memes.each do |meme| %>
+
+<%= meme.image_url %>
+
+<% end %>
+
+<div class = "memes">
+
+<%= j = image_tag('javier.png', size: "200x200", class:"meme", alt:"javier") %>
+
+<% 50.times do j %>
+  <%= j %>
+<%end %>
+
+</div>
