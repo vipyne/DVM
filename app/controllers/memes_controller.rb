@@ -7,7 +7,7 @@ class MemesController < ApplicationController
 
   def show
     @meme = Meme.find(params[:id])
-    @captions = @meme.captions
+    @captions = Caption.where(meme_id: params[:id])
   end
 
 end
