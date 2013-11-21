@@ -29,6 +29,10 @@ div.memes{
   text-align: center;
 }
 
+div.captions{
+  text-align: center;
+}
+
 div.meme{
   margin: 20px;
   text-align: center;
@@ -46,6 +50,36 @@ img.meme_show{
 img.meme {
   margin: 30px;
   border: solid 10px rgba(138,150,150,0.7);
+}
+
+form.caption_form{
+  margin: 0 auto;
+  /*width: 300px;*/
+}
+
+input{
+  border-radius: 1em;
+  background-color: black;
+  color: white;
+  border: none;
+  margin: 2px;
+  width: 150px;
+}
+
+input[type="submit"] {
+  width: 80px;
+  color: white;
+
+
+}
+
+textarea {
+  height: 70px;
+  width: 200px;
+  background-color: black;
+  border-radius: 1em;
+  color: white;
+
 }
 
 @media screen and (max-width: 400px){

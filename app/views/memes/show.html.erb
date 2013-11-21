@@ -7,11 +7,13 @@
 <hr>
 <%= render "captions/captions" %>
 <br>
-<%= form_for :caption do |f|  %>
-<%= f.text_field :title %>
-<%= f.text_field :signature %>
+
+<div class="captions">
+<%= form_for :caption, :html => {:class => "caption_form"} do |f|  %>
+Caption: <%= f.text_area :title %><br>
+Signature: <%= f.text_field :signature %><br>
 <%= f.submit "submit" %>
 <% end %>
-
+</div>
 
 
