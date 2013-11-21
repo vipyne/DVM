@@ -1,0 +1,44 @@
+@import url(http://fonts.googleapis.com/css?family=Quattrocento+Sans);
+body{
+  background-color:#E0E0D6 ;
+}
+
+
+header {
+  background-color: #47B26B;
+  position: relative;
+  height: 250px;
+}
+
+h1.header {
+  position: absolute;
+  font-family: 'Quattrocento Sans';
+  text-align: center;
+  left: 30%;
+  right: 30%;
+  top: 15%;
+  font-size: 50px;
+  color: white;
+  /*background-color: rgba(204,204,204,.7);
+  padding: 10px;
+  border-radius: .5em;*/
+}
+
+div.memes{
+  margin: 20px;
+  text-align: center;
+}
+
+img.meme {
+  margin: 30px;
+  border: solid 10px rgba(138,150,150,0.7);
+}
+
+@media (max-width: 400px){
+  h1.header{
+    font-size: 25px;
+  }
+  div.memes{
+    margin: 30px auto;
+  }
+}
