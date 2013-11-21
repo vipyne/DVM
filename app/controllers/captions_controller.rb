@@ -1,6 +1,11 @@
 class CaptionsController <ApplicationController
-  def show
-
+  def create
+    @caption = Caption.new
   end
+
+  def new
+    @caption = Caption.new
+  end
+
 
 end
