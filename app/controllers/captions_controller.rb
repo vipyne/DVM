@@ -1,3 +1,5 @@
-class CaptionController < ActionController::Base
-  protect_from_forgery
+class CaptionsController < ActionController
+  def show
+  end
+
 end
