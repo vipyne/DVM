@@ -7,7 +7,10 @@ describe MemesController do
   end
 
   it "#show" do
-    get
+    my_meme = Meme.create
+    get :show, id: my_meme.id
+    response.status.should eq 200
+  end
 end
 
 
