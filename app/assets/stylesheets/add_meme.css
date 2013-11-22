@@ -27,7 +27,7 @@ input[type="submit"] {
   background: transparent;
   border: solid 3px rgba (0,0,0,.7);
 }
-input[type="submit"]:hover{
+input[type="submit"]{
   background: rgba(242,255,128,.3);
 }
 
@@ -52,7 +52,7 @@ textarea {
 
 div.new_meme{
   width: 500px;
-  height: 109px;
+  height: 115px;
   margin: 0 auto;
   position: relative;
 /*  border: 1px solid;*/
@@ -69,20 +69,18 @@ form.caption_form{
 
 div.wrapper{
   position: absolute;
-  height: 20px;
-  width: 105px;
-  padding-right: 5px;
-  border-radius: 1em;
+  height: 34px;
+  width: 120px;
+  /*padding-right: 5px;*/
+  /*border-radius: 1em;*/
   overflow: hidden;
   text-align: center;
-  padding-top: 5px;
-  /*background: url('choose_file_4.png');*/
+  /*padding-top: 5px;*/
+  background: url('choose_file.png');
   /*background-repeat: no-repeat;*/
 }
 
-span {
-  visibility:hidden;
-}
+
 
 input#meme_image_url {
   /*z-index: 10;*/
@@ -115,7 +113,7 @@ input[type="file"] {
 }
 
 div.wrapper:hover{
-  background: rgba(242,255,128,.3);
+  background: url('choose_file_hover.png');
 }
 
 
