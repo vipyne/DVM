@@ -18,17 +18,16 @@ $(document).ready(function(){
 
   })
 
+  var orig_text = $(".image p").text()
 
-  // function add_caption(server_data){
-  //   $("table").append(server_data)
-  // }
+  $(".caption_table tr").on('mouseover',function(e){
+    e.preventDefault
+    var meme_text = $(this).children().eq(1).text()
+    $(".image p").text(meme_text)
+  })
 
-
-
-
-
-
-
-
-
+  $(".caption_table tr").on('mouseout',function(e){
+    e.preventDefault
+    $(".image p").text(orig_text)
+  })
 })
