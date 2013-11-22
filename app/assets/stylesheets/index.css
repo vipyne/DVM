@@ -143,7 +143,7 @@ img.meme {
 
 form.caption_form{
   margin: 0 auto;
-  padding: 5px;
+  /*padding: 5px;*/
 }
 
 input[type="text"]{

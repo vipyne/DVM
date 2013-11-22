@@ -1,10 +1,11 @@
-
+<div class="new_meme">
 <%= form_for @meme, method: "post" do |f| %>
-title: <%= f.text_field :title %><br>
-image url: <%= f.text_field :image_url %> or<br>
-file from desktop: <%= f.file_field :image_url %><br>
+<%= f.text_field :title, :placeholder => "Title your Meme" %><br>
+<%= f.text_field :image_url, id:"meme_url", :placeholder => "Paste Image URL" %><br>
+or
+<div class="wrapper">
+<%= f.file_field :image_url %>
+</div>
 <%= f.submit "submit" %>
 <% end %>
-
-<hr>
-
+</div>

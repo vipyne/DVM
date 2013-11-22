@@ -7,7 +7,6 @@ class MemesController < ApplicationController
 
   def create
     clres = Cloudinary::Uploader.upload(params[:meme][:image_url])
-    p clres
     @meme = Meme.create(title: params[:meme][:title], image_url: clres["url"])
     redirect_to meme_path(@meme)
   end
