@@ -1,14 +1,14 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/apprentice/Desktop/DVM/config/environment.rb": [
+      "/Users/vipyne/Documents/_rails/pimp_my_meme/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/Users/apprentice/Desktop/DVM/config/application.rb": [
+      "/Users/vipyne/Documents/_rails/pimp_my_meme/config/application.rb": [
         1,
         null,
         1,
@@ -74,7 +74,7 @@
         null,
         null
       ],
-      "/Users/apprentice/Desktop/DVM/config/boot.rb": [
+      "/Users/vipyne/Documents/_rails/pimp_my_meme/config/boot.rb": [
         1,
         null,
         null,
@@ -82,7 +82,7 @@
         null,
         1
       ],
-      "/Users/apprentice/Desktop/DVM/config/environments/test.rb": [
+      "/Users/vipyne/Documents/_rails/pimp_my_meme/config/environments/test.rb": [
         1,
         null,
         null,
@@ -121,7 +121,7 @@
         1,
         null
       ],
-      "/Users/apprentice/Desktop/DVM/config/initializers/backtrace_silencers.rb": [
+      "/Users/vipyne/Documents/_rails/pimp_my_meme/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -130,7 +130,7 @@
         null,
         null
       ],
-      "/Users/apprentice/Desktop/DVM/config/initializers/inflections.rb": [
+      "/Users/vipyne/Documents/_rails/pimp_my_meme/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -147,14 +147,14 @@
         null,
         null
       ],
-      "/Users/apprentice/Desktop/DVM/config/initializers/mime_types.rb": [
+      "/Users/vipyne/Documents/_rails/pimp_my_meme/config/initializers/mime_types.rb": [
         null,
         null,
         null,
         null,
         null
       ],
-      "/Users/apprentice/Desktop/DVM/config/initializers/secret_token.rb": [
+      "/Users/vipyne/Documents/_rails/pimp_my_meme/config/initializers/secret_token.rb": [
         null,
         null,
         null,
@@ -163,7 +163,7 @@
         null,
         1
       ],
-      "/Users/apprentice/Desktop/DVM/config/initializers/session_store.rb": [
+      "/Users/vipyne/Documents/_rails/pimp_my_meme/config/initializers/session_store.rb": [
         null,
         null,
         1,
@@ -173,7 +173,7 @@
         null,
         null
       ],
-      "/Users/apprentice/Desktop/DVM/config/initializers/wrap_parameters.rb": [
+      "/Users/vipyne/Documents/_rails/pimp_my_meme/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -189,16 +189,16 @@
         1,
         null
       ],
-      "/Users/apprentice/Desktop/DVM/app/controllers/application_controller.rb": [
+      "/Users/vipyne/Documents/_rails/pimp_my_meme/app/controllers/application_controller.rb": [
         1,
         1,
         null
       ],
-      "/Users/apprentice/Desktop/DVM/app/helpers/application_helper.rb": [
+      "/Users/vipyne/Documents/_rails/pimp_my_meme/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/apprentice/Desktop/DVM/app/controllers/captions_controller.rb": [
+      "/Users/vipyne/Documents/_rails/pimp_my_meme/app/controllers/captions_controller.rb": [
         1,
         null,
         1,
@@ -213,16 +213,22 @@
         null,
         null
       ],
-      "/Users/apprentice/Desktop/DVM/app/models/caption.rb": [
+      "/Users/vipyne/Documents/_rails/pimp_my_meme/app/models/caption.rb": [
         1,
         1,
-        null,
+        1,
         1,
         null
       ],
-      "/Users/apprentice/Desktop/DVM/app/controllers/memes_controller.rb": [
+      "/Users/vipyne/Documents/_rails/pimp_my_meme/app/controllers/memes_controller.rb": [
         1,
         null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        1,
         1,
         1,
         1,
@@ -230,60 +236,47 @@
         null,
         1,
         0,
-        0,
-        0,
         null,
         null,
         1,
         0,
-        null,
-        null,
-        1,
-        1,
-        1,
+        0,
         null,
         null,
         null
       ],
-      "/Users/apprentice/Desktop/DVM/app/models/meme.rb": [
+      "/Users/vipyne/Documents/_rails/pimp_my_meme/app/models/meme.rb": [
+        1,
         1,
         1,
         1,
         null
       ],
-      "/Users/apprentice/Desktop/DVM/app/models/Caption.rb": [
+      "/Users/vipyne/Documents/_rails/pimp_my_meme/app/models/Caption.rb": [
         1,
-        1,
-        null,
-        1,
-        null
-      ],
-      "/Users/apprentice/Desktop/DVM/app/models/Meme.rb": [
         1,
         1,
         1,
         null
       ],
-      "/Users/apprentice/Desktop/DVM/config/routes.rb": [
-        1,
-        null,
-        1,
-        null,
+      "/Users/vipyne/Documents/_rails/pimp_my_meme/app/models/Meme.rb": [
         1,
         1,
-        null,
+        1,
+        1,
         null
       ],
-      "/Users/apprentice/Desktop/DVM/spec/models/caption_spec.rb": [
+      "/Users/vipyne/Documents/_rails/pimp_my_meme/config/routes.rb": [
         1,
         null,
         1,
         null,
-        null,
+        1,
+        1,
         null,
         null
       ]
     },
-    "timestamp": 1385146336
+    "timestamp": 1385151945
   }
 }
