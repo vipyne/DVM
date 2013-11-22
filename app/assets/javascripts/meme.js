@@ -30,4 +30,17 @@ $(document).ready(function(){
     e.preventDefault
     $(".image p").text(orig_text)
   })
+
+  $(window).scroll(function(e){
+    var y = $(this).scrollTop()
+    console.log(y)
+    if (y > 72)
+      {
+        $("#meme_box").attr('class','meme_stop')
+      }
+    else
+      {
+        $("#meme_box").attr('class','meme')
+      }
+  })
 })

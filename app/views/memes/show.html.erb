@@ -1,11 +1,12 @@
 <div class="pimp_meme">
   <h1 class="meme"><a href='/' id="index">PIMP MY MEME</a></h1>
 </div>
-<div class="meme">
+<div class="container">
+<div class="meme" id="meme_box">
 
 <div class="image">
   <%=image_tag(@meme.image_url, size: "400x400", class:"meme_show", alt:@meme.title)%>
-  <p class="image">Hello World</p>
+  <p class="image"><%if@captions.first%><%=@captions.first.title%><%end%></p>
 </div>
 
 
@@ -24,7 +25,7 @@
   <%= f.submit "submit" %>
   <% end %>
 </div>
-
+</div>
 <a class="vote_up_button">
 
 
