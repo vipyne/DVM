@@ -15,7 +15,6 @@ $(document).ready(function(){
       $(".caption_table table").append(server_data)
       form.find("textarea, input[type=text]").val("");
     })
-
   })
 
   var orig_text = $(".image p").text()
@@ -31,16 +30,5 @@ $(document).ready(function(){
     $(".image p").text(orig_text)
   })
 
-  // $(window).scroll(function(e){
-  //   var y = $(this).scrollTop()
-  //   console.log(y)
-  //   if (y > 72)
-  //     {
-  //       $("#meme_box").attr('class','meme_stop')
-  //     }
-  //   else
-  //     {
-  //       $("#meme_box").attr('class','meme')
-  //     }
-  // })
+
 })
