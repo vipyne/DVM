@@ -2,7 +2,9 @@
   <h1 class="header">PIMP MY MEME</h1>
 </header>
 
-<%= link_to "add a meme", new_meme_path %>
+<div class="add-a-meme">
+<%= link_to "+ add a meme", new_meme_path, class: "add-a-meme " %>
+</div>
 
 <% form_for :meme, url: memes_path(:meme) do |f| %>
 <%= f.text_field :title %>
