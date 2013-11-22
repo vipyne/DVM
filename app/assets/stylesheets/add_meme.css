@@ -76,7 +76,7 @@ div.wrapper{
   overflow: hidden;
   text-align: center;
   /*padding-top: 5px;*/
-  background: url('choose_file.png');
+  background: url('http://i.imgur.com/YMa6Ctp.png');
   /*background-repeat: no-repeat;*/
 }
 
@@ -113,7 +113,7 @@ input[type="file"] {
 }
 
 div.wrapper:hover{
-  background: url('choose_file_hover.png');
+  background: url('http://i.imgur.com/VzKJsHU.png');
 }
 
 
