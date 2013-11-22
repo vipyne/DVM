@@ -120,6 +120,17 @@ div.add-a-meme {
   height: 10px;
 }
 
+.visible {
+  /*visibility: hidden;*/
+  width: 500px;
+  height: 115px;
+  margin: 0 auto;
+  position: relative;
+/*  border: 1px solid;*/
+  background: rgba(71, 178, 107,.7);
+  border-radius: 1.5em ;
+  padding: 10px;
+}
 
 a.add-a-meme {
   background-color: rgba(71, 178, 107,1);
