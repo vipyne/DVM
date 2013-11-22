@@ -3,9 +3,10 @@
 </div>
 <div class="meme">
 
-
-  <h1 class="meme_show"> Lay it on Me[me] </h1>
+<div class="image">
   <%=image_tag(@meme.image_url, size: "400x400", class:"meme_show", alt:@meme.title)%>
+  <p class="image"></p>
+</div>
 
 
 
@@ -16,7 +17,7 @@
 <br>
 
 <div class="caption_form">
-  <%= form_for :caption, :html => {:class => "caption_form"} do |f|  %>
+  <%= form_for :caption do |f|  %>
   <%= f.text_area :title, :placeholder => "Show me your Meme"%><br>
   <%= f.text_field :signature, :placeholder => "Your Name" %><br>
   <%= f.hidden_field :meme_id, :value => @meme.id%>

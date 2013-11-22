@@ -21,6 +21,31 @@ div.pimp_meme{
   padding-top: 5px;
   padding-bottom: 5px;
 }
+
+div.image{
+  height: 400px;
+  width: 400px;
+  position: relative;
+  margin: 0 auto;
+}
+
+p.image{
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  bottom:10px;
+  left: 20px;
+  font-size: 30px;
+  font-family: "impact";
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+div.vote_up{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
 h1.meme{
 
   position:absolute;
@@ -32,7 +57,7 @@ h1.meme{
 
 a#index{
   text-decoration: none;
-  color: inherit;
+  color: white;
 }
 
 a#index:hover{
@@ -121,7 +146,7 @@ button.vote_up_button:hover{
 
 
 div.meme{
-  margin: 20px;
+  margin: 40px;
   text-align: center;
 }
 
@@ -131,7 +156,7 @@ h1.meme_show{
 /*rgba(138,150,150,0.7);*/
 
 img.meme_show{
-  margin: 30px auto 0;
+  margin: 0 auto ;
   border: solid 5px rgba(138,150,150,0.7) ;
   border-radius: .25em;
 }
@@ -191,6 +216,12 @@ textarea {
 
 
 
+
+
+
+
+
+
 @media screen and (max-width: 400px){
   h1.header{
     font-size: 25px;
@@ -204,9 +235,17 @@ textarea {
     height: 100px;
   }
 
+  div.image{
+  height: 200px;
+  width: 200px;
+  position: relative;
+  margin: 0 auto;
+}
+
+
   img.meme_show{
   width: 200px;
-  height: 200px;v
+  height: 200px;
   margin: 30px auto 0;
   border: solid 5px rgba(138,150,150,0.7) ;
   border-radius: .25em;
