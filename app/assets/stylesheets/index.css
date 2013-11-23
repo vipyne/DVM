@@ -267,7 +267,7 @@ textarea {
 
   img.meme_show{
     width: 200px;
-    height: ==200px;
+    height: 200px;
     margin: 30px auto 0;
     border: solid 5px rgba(138,150,150,0.7) ;
     border-radius: .25em;
@@ -308,7 +308,7 @@ textarea {
     padding: 3px;
     width: 80px;
     bottom: 10%;
-    left: 5%;
+    /*left: 5%;*/
     border-radius: 1em;
     background: transparent;
     border: solid 3px rgba (0,0,0,.7);
