@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131121055440) do
+ActiveRecord::Schema.define(:version => 20131122234356) do
 
   create_table "captions", :force => true do |t|
     t.text     "title"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(:version => 20131121055440) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
     t.integer  "meme_id"
+    t.integer  "votes"
   end
 
   create_table "memes", :force => true do |t|

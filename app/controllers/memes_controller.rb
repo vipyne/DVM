@@ -17,7 +17,7 @@ class MemesController < ApplicationController
 
   def show
     @meme = Meme.find(params[:id])
-    @captions = Caption.where(meme_id: params[:id])
+    @captions = @meme.captions.order("votes DESC")
   end
 
 end

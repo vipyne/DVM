@@ -165,8 +165,8 @@ button.vote_up_button{
   margin: 4px;
 }
 
-button.vote_up_button:hover{
-  -webkit-transition: all .5s ease-in-out;
+button.vote_up_button:active{
+  /*-webkit-transition: all .5s ease-in-out;*/
   background: url("triangle.png");
   background-size: cover;
   border: none;
@@ -267,7 +267,7 @@ textarea {
 
   img.meme_show{
     width: 200px;
-    height: ==200px;
+    height: 200px;
     margin: 30px auto 0;
     border: solid 5px rgba(138,150,150,0.7) ;
     border-radius: .25em;
