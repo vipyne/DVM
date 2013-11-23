@@ -13,7 +13,7 @@ class CaptionsController <ApplicationController
   end
 
   def update
-    @caption = Caption.find(params["id"])
+    @caption = Caption.find(params[:id])
     @caption.votes +=1
     @caption.save
     render :partial => "/captions/newly_added", :locals => {:caption => @caption}
