@@ -3,7 +3,7 @@
 </header>
 
 <div class="add-a-meme">
-<%= link_to "+ add a meme", new_meme_path, class: "add-a-meme " %>
+<%= link_to "+ Add a Meme", new_meme_path, class: "add-a-meme " %>
 </div>
 
 <div class="new">
@@ -34,7 +34,7 @@ or
 
 
 <% @memes.shuffle.each do |meme|%>
-  <%= link_to cl_image_tag(meme.public_id.concat(".jpg"), :crop => :limit, :height => 200, class:"meme", alt:meme.title), meme_path(meme) %>
+  <%= link_to cl_image_tag(meme.public_id.concat("."+meme.format), :crop => :limit, :height => 200, class:"meme", alt:meme.title), meme_path(meme) %>
 <%end %>
 
 </div>

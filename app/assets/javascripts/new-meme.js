@@ -9,6 +9,18 @@ $('.add-a-meme a').on('click', function(e){
     $('.visible').slideDown()
 })
 
+// containers for impact caption text
+var picHeightBefore = $('div.height-fix').text()
+var picHeight = picHeightBefore - 80
+$('div.image').css('height', picHeight)
+
+var picWidthBefore = $('div.width-fix').text()
+var picWidth = picWidthBefore - 80
+$('div.image').css('width', picWidth)
+
+console.log('hBB:', picHeightBefore,'wBB:', picWidthBefore)
+console.log('h:', picHeight,'w:', picWidth)
+
 /////////////////////////////
 })
 
