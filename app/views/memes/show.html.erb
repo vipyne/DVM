@@ -5,11 +5,9 @@
 <div class="meme" id="meme_box">
 
 <div class="image">
-  <%=image_tag(@meme.image_url, size: "400x400", class:"meme_show", alt:@meme.title)%>
+  <%=cl_image_tag(@meme.public_id.concat(".jpg"), :crop => :limit, :width => 400, class:"meme_show", alt:@meme.title)%>
   <p class="image"><%if@captions.first%><%=@captions.first.title%><%end%></p>
 </div>
-
-
 
 </div>
 <div class="caption_table">
