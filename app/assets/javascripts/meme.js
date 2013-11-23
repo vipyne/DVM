@@ -17,6 +17,19 @@ $(document).ready(function(){
     })
   })
 
+  $(".vote_up_button").on("click", function(e){
+    e.preventDefault()
+
+    var id = $(this).attr("id")
+    console.log("Vote Up " + id)
+    $.ajax({
+      url: "/captions/"+id,
+      type: "PUT"
+    }).done(function(server_data){
+      location.reload()
+    })
+  })
+
   var orig_text = $(".image p").text()
 
   $(".caption_table tr").on('mouseover',function(e){

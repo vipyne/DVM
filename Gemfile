@@ -18,13 +18,13 @@ group :assets do
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
-
+  gem 'awesome_print'
   gem 'uglifier', '>= 1.0.3'
 end
 
 gem 'jquery-rails'
 
-group :test do 
+group :test do
   gem 'rspec-rails'
 end
 
