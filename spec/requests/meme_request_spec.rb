@@ -13,8 +13,10 @@ describe "requests for meme resource" do
   end
 
   it "upon submission, saves to db a body and signature for a caption" do
-    pending
-    # request?
+    mememe = Meme.create(id: 1, title: "bah", image_url: "http://3.bp.blogspot.com/-cnMH8UihxyI/UID-UT2EOqI/AAAAAAAABWQ/7P16GcUpYfY/s1600/monkey+2.jpg")
+    expect{
+      post "/captions", :caption => {body: "bah", signature: "tommayy", meme_id: mememe.id}
+    }.to change{ Caption.count}.by(1)
   end
 
 end
