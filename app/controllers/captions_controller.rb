@@ -16,7 +16,13 @@ class CaptionsController <ApplicationController
     @caption = Caption.find(params[:id])
     @caption.votes +=1
     @caption.save
-    render :partial => "/captions/newly_added", :locals => {:caption => @caption}
+    # if request.xhr
+    #   vote_content = {votes: new_vote}
+    #   content_type :json
+    #   vote_content.to_json
+    # else
+      render :partial => "/captions/newly_added", :locals => {:caption => @caption}
+    # end
   end
 
 
