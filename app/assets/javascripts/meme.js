@@ -16,7 +16,6 @@ $(document).ready(function(){
     }).done(function(data){
       $(".caption_table table").append(data)
       form.find("textarea, input[type=text]").val("");
-      // console.log($(".image p").text())
       if ($(".image p").text() == "") {
         $(".image p").text(title)
       }
