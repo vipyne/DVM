@@ -11,10 +11,6 @@ class MemesController < ApplicationController
       public_id: clres["public_id"], height: clres["height"], width: clres["width"],
       format: clres["format"])
     redirect_to meme_path(@meme)
-    p @meme.public_id
-    p @meme.format
-    p "*"*50
-    p params
   end
 
   def new
