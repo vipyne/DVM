@@ -1,13 +1,11 @@
 $(document).ready(function(){
 
-
+  var orig_text = $(".image p").text()
 
   $(".caption_form form").on('submit',function(e){
     e.preventDefault()
     var form = $(this);
     var title = form.find("textarea, input[type=text]").val()
-
-    console.log("input title", title)
 
     $.ajax({
       url: '/captions',
@@ -18,12 +16,12 @@ $(document).ready(function(){
       form.find("textarea, input[type=text]").val("");
       if ($(".image p").text() == "") {
         $(".image p").text(title)
+        orig_text = title
       }
     })
   })
 
 
-  var orig_text = $(".image p").text()
 
 
   $(".caption_table table").on('mouseover', 'tr', function(e){
