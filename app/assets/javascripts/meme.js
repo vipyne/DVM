@@ -1,7 +1,6 @@
+// use remote => true
+// this is messy javascript. use objects, constructors, modules, etc.
 $(document).ready(function(){
-
-
-
   $(".caption_form form").on('submit',function(e){
     e.preventDefault()
 
@@ -18,7 +17,7 @@ $(document).ready(function(){
   })
 
   $(".vote_up_button").on("click", function(e){
-    e.preventDefault()
+    e.preventDefault
 
     var id = $(this).attr("id")
     console.log("Vote Up " + id)
@@ -26,20 +25,21 @@ $(document).ready(function(){
       url: "/captions/"+id,
       type: "PUT"
     }).done(function(server_data){
+      // no point in using ajax then.
       location.reload()
     })
   })
 
   var orig_text = $(".image p").text()
 
-  $(".caption_table tr").on('mouseover',function(e){
+  $(".caption_table tr").on('mouseover', function(e){
     e.preventDefault
     var meme_text = $(this).children().eq(1).text()
     $(".image p").text(meme_text)
   })
 
   $(".caption_table tr").on('mouseout',function(e){
-    e.preventDefault
+    e.preventDefault();
     $(".image p").text(orig_text)
   })
 

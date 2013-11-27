@@ -1,3 +1,4 @@
+too big and terrible indentation
 <div class="pimp_meme">
   <h1 class="meme"><a href='/' id="index">PIMP MY MEME</a></h1>
 </div>
@@ -6,14 +7,18 @@
 
 <div class="image">
   <%=image_tag(@meme.image_url, size: "400x400", class:"meme_show", alt:@meme.title)%>
-  <p class="image"><%if@captions.first%><%=@captions.first.title%><%end%></p>
+  <p class="image">
+    <% if @captions.first %>
+      <%= @captions.first.title %>
+    <% end %>
+  </p>
 </div>
 
 
 
 </div>
 <div class="caption_table">
-<%= render "captions/captions" %>
+  <%= render "captions/captions" %>
 </div>
 <br>
 

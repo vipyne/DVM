@@ -6,9 +6,15 @@ class MemesController < ApplicationController
   end
 
   def create
-    clres = Cloudinary::Uploader.upload(params[:meme][:image_url])
-    @meme = Meme.create(title: params[:meme][:title], image_url: clres["url"])
-    redirect_to meme_path(@meme)
+    # bad var name
+    # you're only handling the happy path, what's that mean?
+    # what happens if I couldn't create the Meme? you will fail silently
+    @meme = Meme.new params[:meme]
+    if @meme.save
+      redirect_to meme_path(@meme)
+    else
+      # render errors
+    end
   end
 
   def new

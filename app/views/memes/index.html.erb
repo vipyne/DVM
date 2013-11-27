@@ -1,3 +1,4 @@
+// crazy big file, break it donw into partials.
 <header>
   <h1 class="header">PIMP MY MEME</h1>
 </header>
@@ -7,31 +8,28 @@
 </div>
 
 <div class="new">
-<div class="visible">
-<%= form_for @meme, method: "post" do |f| %>
-<%= f.text_field :title, :placeholder => "Title your Meme" %><br>
-<%= f.text_field :image_url, id:"meme_url", :placeholder => "Paste Image URL" %><br>
-or
-<div class="wrapper">
-<%= f.file_field :image_url %>
-</div>
-<%= f.submit "submit" %>
-<% end %>
-</div>
+  <div class="visible">
+    <%= form_for @meme do |f| %>
+      <%= f.text_field :title, :placeholder => "Title your Meme" %>
+      <%= f.text_field :image_url, id: "meme_url", :placeholder => "Paste Image URL" %>
+      or
+      <div class="wrapper">
+        <%= f.file_field :image_url %>
+      </div>
+      <%= f.submit "submit" %>
+    <% end %>
+  </div>
 </div>
 
 
 
 <% form_for :meme, url: memes_path(:meme) do |f| %>
-<%= f.text_field :title %>
-
-<%= f.submit "submit" %>
+  <%= f.text_field :title %>
+  <%= f.submit "submit" %>
 <% end %>
 
 <div class = "memes">
-
-<% @memes.shuffle.each do |meme|%>
-  <%= link_to image_tag(meme.image_url, size: "200x200", class:"meme", alt:meme.title), meme_path(meme) %>
-<%end %>
-
+  <% @memes.shuffle.each do |meme|%>
+    <%= link_to image_tag(meme.image_url, class:"meme", alt:meme.title), meme_path(meme) %>
+  <%end %>
 </div>

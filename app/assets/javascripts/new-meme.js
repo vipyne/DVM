@@ -1,3 +1,4 @@
+// commented code is evil.
 $(document).ready(function(){
 /////////////////////////////
 
