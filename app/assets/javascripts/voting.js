@@ -11,7 +11,6 @@ $(document).ready(function(){
     }).done(function(server_data){
       var grandParent = thisThing.parent()
       grandParent.parent().replaceWith(server_data)
-      // location.reload()
     })
   })
 
